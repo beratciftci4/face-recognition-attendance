@@ -23,10 +23,11 @@ Automation: Google API Client, Threading
 
 📁 System Architecture
 
-main_app.py - The central brain. Handles the camera loop, face matching, and hardware signals.
-register_person.py - Enrollment module. Captures face encodings and stores them as BLOBs in the database.
-database_setup.py - Initializes the relational database for students and logs.
-end_of_day_report.py - Independent script to audit daily records and dispatch emails.
++ main_app.py - The central brain. Handles the camera loop, face matching, and hardware signals.
++ register_person.py - Enrollment module. Captures face encodings and stores them as BLOBs in the database.
++ database_setup.py - Initializes the relational database for students and logs.
++ end_of_day_report.py - Independent script to audit daily records and dispatch emails.
+
 
 🚀 Getting Started
 1. Database Initialization 
@@ -36,6 +37,7 @@ end_of_day_report.py - Independent script to audit daily records and dispatch em
 3. Running the System
   Start the main recognition and hardware loop: python main_app.py
   
+
 🔒 Security Requirements
 For the Gmail notification system to work, you must provide your own credentials.json from the Google Cloud Console.
 Note: For security reasons, the token.json and credentials.json files are excluded from this repository to protect private API access.
